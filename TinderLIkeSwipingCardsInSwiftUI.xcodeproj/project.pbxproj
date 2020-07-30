@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		9578A1CB24D2D6E2004ED02C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578A1CA24D2D6E2004ED02C /* ContentView.swift */; };
 		9578A1CD24D2D6E3004ED02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9578A1CC24D2D6E3004ED02C /* Assets.xcassets */; };
 		9578A1D024D2D6E3004ED02C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9578A1CF24D2D6E3004ED02C /* Preview Assets.xcassets */; };
+		9578A1D924D2D947004ED02C /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = 9578A1D824D2D947004ED02C /* CardStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9578A1D924D2D947004ED02C /* CardStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = TinderLIkeSwipingCardsInSwiftUI;
+			packageProductDependencies = (
+				9578A1D824D2D947004ED02C /* CardStack */,
+			);
 			productName = TinderLIkeSwipingCardsInSwiftUI;
 			productReference = 9578A1C524D2D6E2004ED02C /* TinderLIkeSwipingCardsInSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 9578A1BC24D2D6E2004ED02C;
+			packageReferences = (
+				9578A1D724D2D947004ED02C /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
+			);
 			productRefGroup = 9578A1C624D2D6E2004ED02C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9578A1D724D2D947004ED02C /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9578A1D824D2D947004ED02C /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9578A1D724D2D947004ED02C /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
+			productName = CardStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9578A1BD24D2D6E2004ED02C /* Project object */;
 }
